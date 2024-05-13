@@ -1,1 +1,2 @@
-aj ansible_host=localhost ansible_ssh_pass=12345 ansible_ssh_user=aj anisble_sudo_pass=12345 ansible_sudo_user=aj
+[aa]
+aj ansible_host=localhost ansible_ssh_pass=12345 ansible_ssh_user=aj ansible_sudo_pass=12345 ansible_sudo_user=aj
