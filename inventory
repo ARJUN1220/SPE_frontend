@@ -1,3 +1,2 @@
-[all]
-ansible_host=localhost ansible_user=aj ansible_ssh_pass=12345
-host_key_checking = False
+[myhosts]
+localhost ansible_ssh_user=aj ansible_ssh_pass=12345 ansible_sudo_pass=12345
