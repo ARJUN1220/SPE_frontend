@@ -23,6 +23,7 @@ pipeline{
         stage("Pushing Docker Image on DockerHub"){
             steps{
                 sh 'docker push arjun201/aj-frontend:1.0'
+                sh 'export ANSIBLE_HOST_KEY_CHECKING=False'
             }
         }
         stage("Ansible Stage"){
