@@ -1,0 +1,50 @@
+version: '3'
+services:
+  aj-db:
+    container_name: aj-db
+    image: mysql
+    volumes:
+      - aj-db-vol:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+
+  aj-backend:
+    container_name: aj-backend
+    image: arjun201/aj-backend:1.0
+    working_dir: /aj/backend
+    volumes:
+      - aj-backend-vol:/aj/backend
+    stdin_open: true
+    expose:
+      - 8086
+    ports:
+      - 8086:8086
+    depends_on:
+      - aj-db
+    restart: unless-stopped
+    environment:
+      DB_SERVICE_NAME: ${DB_SERVICE_NAME}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      BACKEND_INTERNAL_PORT: ${BACKEND_INTERNAL_PORT}
+
+  aj-frontend:
+    container_name: aj-frontend
+    image: arjun201/aj-frontend:1.0
+    working_dir: /aj/frontend
+    stdin_open: true
+    expose:
+      - 8087
+    ports:
+      - 8087:80
+    depends_on:
+      - aj-backend
+    restart: unless-stopped
+
+volumes:
+  aj-db-vol:
+  aj-backend-vol:
