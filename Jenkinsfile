@@ -38,7 +38,7 @@ pipeline{
 
 
 
-         stages {
+        
         stage("Ansible Stage") {
             steps {
                 withEnv(["ANSIBLE_HOST_KEY_CHECKING=False"]) {
@@ -50,7 +50,7 @@ pipeline{
                 }
             }
         }
-    }
+    
     }
 }
 
