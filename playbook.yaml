@@ -1,6 +1,6 @@
 - name: Run Docker Compose file on VM
   hosts: all
-  become: flalse
+  become: false
 
   vars_files:
     - ./env_vars.yaml
