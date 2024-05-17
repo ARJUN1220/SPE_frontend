@@ -12,7 +12,7 @@
 
     - name: Copy Docker Compose file to VM
       copy:
-        src: /var/lib/jenkins/workspace/JAIRU-Frontend/docker-compose.yaml
+        src: /var/lib/jenkins/workspace/Frontend/docker-compose.yaml
         dest: ./docker-compose.yaml
 
     - name: stop all the services
