@@ -25,14 +25,32 @@ pipeline{
         //         sh 'docker push arjun201/aj-frontend:1.0'
         //     }
         // }
-        stage("Ansible Stage"){
-            steps{
-                ansiblePlaybook(
-                inventory: 'inventory',
-                playbook: 'playbook.yaml',
-                vaultCredentialsId: 'ANSIBLE_VAULT_PASSWORD')
+
+
+        // stage("Ansible Stage"){
+        //     steps{
+        //         ansiblePlaybook(
+        //         inventory: 'inventory',
+        //         playbook: 'playbook.yaml',
+        //         vaultCredentialsId: 'ANSIBLE_VAULT_PASSWORD')
+        //     }
+        // }
+
+
+
+         stages {
+        stage("Ansible Stage") {
+            steps {
+                withEnv(["ANSIBLE_HOST_KEY_CHECKING=False"]) {
+                    ansiblePlaybook(
+                        inventory: 'inventory',
+                        playbook: 'playbook.yaml',
+                        vaultCredentialsId: 'ANSIBLE_VAULT_PASSWORD'
+                    )
+                }
             }
         }
+    }
     }
 }
 
