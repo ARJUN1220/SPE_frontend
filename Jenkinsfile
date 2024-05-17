@@ -1,4 +1,5 @@
 pipeline{
+    agent any
     environment{
             DOCKERHUB = credentials('DockerHubCred')
             ANSIBLE_VAULT_PASSWORD = credentials('ANSIBLE_VAULT_PASSWORD')
@@ -41,12 +42,14 @@ pipeline{
         
         stage("Ansible Stage") {
             steps {
-                withEnv(["ANSIBLE_HOST_KEY_CHECKING=False"]) {
-                    ansiblePlaybook(
-                        inventory: 'inventory',
-                        playbook: 'playbook.yaml',
-                        vaultCredentialsId: 'ANSIBLE_VAULT_PASSWORD'
-                    )
+                script{
+                    withEnv(["ANSIBLE_HOST_KEY_CHECKING=False"]) {
+                        ansiblePlaybook(
+                            inventory: 'inventory',
+                            playbook: 'playbook.yaml',
+                            vaultCredentialsId: 'ANSIBLE_VAULT_PASSWORD'
+                        )
+                    }
                 }
             }
         }
