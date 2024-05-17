@@ -6,14 +6,15 @@ services:
     volumes:
       - aj-db-vol:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: Password1234
+      MYSQL_USER: arjun
+      MYSQL_PASSWORD: Password@1234
+      MYSQL_DATABASE: SPEDB
 
   aj-backend:
     container_name: aj-backend
     image: arjun201/aj-backend:1.0
+    privileged: true
     working_dir: /aj/backend
     volumes:
       - aj-backend-vol:/aj/backend
@@ -26,11 +27,11 @@ services:
       - aj-db
     restart: unless-stopped
     environment:
-      DB_SERVICE_NAME: ${DB_SERVICE_NAME}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      BACKEND_INTERNAL_PORT: ${BACKEND_INTERNAL_PORT}
+      DB_SERVICE_NAME: aj-db
+      MYSQL_DATABASE: SPEDB
+      MYSQL_USER: aj
+      MYSQL_PASSWORD: Password@1234
+      BACKEND_INTERNAL_PORT: 8086
 
   aj-frontend:
     container_name: aj-frontend
