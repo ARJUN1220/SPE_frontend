@@ -1,5 +1,4 @@
 pipeline{
-    agent any
     environment{
             DOCKERHUB = credentials('DockerHubCred')
             ANSIBLE_VAULT_PASSWORD = credentials('ANSIBLE_VAULT_PASSWORD')
