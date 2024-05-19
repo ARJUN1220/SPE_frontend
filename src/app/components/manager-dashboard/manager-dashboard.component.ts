@@ -110,7 +110,7 @@ export class ManagerDashboardComponent implements OnInit {
   addMember = new FormControl();
   assignEmployee = new FormControl();
 
-  @ViewChild("chart") chart:ChartComponent;
+  @ViewChild("chart") chart!:ChartComponent;
   public chartOptions:any;
   // Partial<ChartOptions>;
 
