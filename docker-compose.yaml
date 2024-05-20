@@ -29,7 +29,7 @@ services:
     environment:
       DB_SERVICE_NAME: aj-db
       MYSQL_DATABASE: SPEDB
-      MYSQL_USER: aj
+      MYSQL_USER: arjun
       MYSQL_PASSWORD: Password@1234
       BACKEND_INTERNAL_PORT: 8086
 
