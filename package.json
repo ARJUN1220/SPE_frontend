@@ -1,5 +1,5 @@
 {
-  "name": "jairu",
+  "name": "workwise",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
-    "serve:ssr:demo_angular": "node dist/jairu/server/server.mjs"
+    "serve:ssr:demo_angular": "node dist/workwise/server/server.mjs"
   },
   "private": true,
   "dependencies": {
