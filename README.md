@@ -1,4 +1,5 @@
 # WorkWize - Industrial Project Management Platform
+
 ## Front End
 
 ### [Back End Repository](https://github.com/NaikVRaj/majorProject)
@@ -7,7 +8,7 @@
 
 1. [Problem Statement](#problem-statement)
 2. [Application Features](#application-features)
-3. [DevOps Tool Stack](#devops-tool-stack)
+3. [Tool Stack](#devops-tool-stack)
 4. [Front End](#front-end)
    - [Introduction](#introduction)
    - [Prerequisites](#prerequisites)
@@ -15,7 +16,7 @@
    - [Running the Application](#running-the-application)
    - [Building the Application](#building-the-application)
    - [Running Tests](#running-tests)
-   - [Tool Stack](#tool-stack)
+   - [Libraries and Dependencies](#libraries-and-dependencies)
 5. [Application UI](#application-ui)
 
 ---
@@ -171,7 +172,7 @@ npm test
 
 This will execute the unit tests and generate a report.
 
-### Tool Stack
+### Libraries and Dependencies
 
 #### Front End:
 - **Framework**: Angular
