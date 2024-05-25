@@ -1,121 +1,22 @@
-# WorkWize - Industrial Project Management Platform (Frontend)
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Running the Application](#running-the-application)
-5. [Building the Application](#building-the-application)
-6. [Running Tests](#running-tests)
-7. [Tool Stack](#tool-stack)
-8. [Contributors](#contributors)
-
----
-
-## Introduction
-
-WorkWize is a comprehensive project management platform tailored for industrial settings. This repository contains the front end of the application, which is built using Angular. The front end interacts with the back end services to provide a seamless user experience for managing projects, tasks, and users.
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Node.js (>= 14.0.0)
-- npm (>= 6.0.0) or Yarn (>= 1.0.0)
-- Angular CLI (>= 12.0.0)
-
-## Installation
-
-Follow these steps to set up the project on your local machine:
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/ARJUN1220/SPE_frontend.git
-    cd SPE_frontend
-    ```
-
-2. **Install dependencies**:
-    ```bash
-    npm install
-    ```
-
-## Running the Application
-
-To run the application locally, use the following command:
-
-```bash
-npm start
-```
-
-This will start the development server and you can access the application at `http://localhost:4200/`.
-
-## Building the Application
-
-To build the application for production, use the following command:
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## Running Tests
-
-To run the unit tests using Karma, use the following command:
-
-```bash
-npm test
-```
-
-This will execute the unit tests and generate a report.
-
-## Tool Stack
-
-### Front End:
-- **Framework**: Angular
-- **Styling**: Angular Material, Bootstrap
-
-### DevDependencies:
-- **Build and Testing**:
-  - Angular CLI
-  - TypeScript
-  - Karma (Test Runner)
-  - Jasmine (Testing Framework)
-  - Karma Chrome Launcher
-  - Karma Coverage
-
-### Dependencies:
-- **Core**:
-  - Angular Animations
-  - Angular CDK
-  - Angular Common
-  - Angular Compiler
-  - Angular Core
-  - Angular Forms
-  - Angular Material
-  - Angular Platform Browser
-  - Angular Platform Server
-  - Angular Router
-  - Angular SSR
-- **Third-Party Libraries**:
-  - ApexCharts
-  - Bootstrap
-  - Express
-  - jQuery
-  - ng-apexcharts
-  - RxJS
-  - Zone.js
-
 # WorkWize - Industrial Project Management Platform
+## Front End
 
-## Back End
-### [Front End Repository](https://github.com/ARJUN1220/SPE_frontend)
+### [Back End Repository](https://github.com/NaikVRaj/majorProject)
+
 ## Table of Contents
 
 1. [Problem Statement](#problem-statement)
 2. [Application Features](#application-features)
-3. [Tool Stack](#tool-stack)
+3. [DevOps Tool Stack](#devops-tool-stack)
+4. [Front End](#front-end)
+   - [Introduction](#introduction)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+   - [Running the Application](#running-the-application)
+   - [Building the Application](#building-the-application)
+   - [Running Tests](#running-tests)
+   - [Tool Stack](#tool-stack)
+5. [User Interface/ User Experience](#user-interface/-user-experience)
 
 ---
 
@@ -126,6 +27,7 @@ In industrial settings, traditional methods of project management often lack eff
 The project "WorkWize" aims to address these challenges by developing a comprehensive project management platform tailored for industrial settings. The primary objective is to provide a streamlined and intuitive solution that enhances project workflows and facilitates effective project management by all stakeholders.
 
 ---
+
 
 ## Application Features
 
@@ -191,7 +93,7 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
 
 ---
 
-## Tool Stack
+## DevOps Tool Stack
 
 ### Front End:
 - Angular JS
@@ -215,6 +117,123 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
 
 
 ---
+
+## Front End
+### Introduction
+
+WorkWize is a comprehensive project management platform tailored for industrial settings. This repository contains the front end of the application, which is built using Angular. The front end interacts with the back end services to provide a seamless user experience for managing projects, tasks, and users.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (>= 14.0.0)
+- npm (>= 6.0.0) or Yarn (>= 1.0.0)
+- Angular CLI (>= 12.0.0)
+
+### Installation
+
+Follow these steps to set up the project on your local machine:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/ARJUN1220/SPE_frontend.git
+    cd SPE_frontend
+    ```
+
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+To run the application locally, use the following command:
+
+```bash
+npm start
+```
+
+This will start the development server and you can access the application at `http://localhost:4200/`.
+
+### Building the Application
+
+To build the application for production, use the following command:
+
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+### Running Tests
+
+To run the unit tests using Karma, use the following command:
+
+```bash
+npm test
+```
+
+This will execute the unit tests and generate a report.
+
+### Tool Stack
+
+#### Front End:
+- **Framework**: Angular
+- **Styling**: Angular Material, Bootstrap
+
+#### DevDependencies:
+- **Build and Testing**:
+  - Angular CLI
+  - TypeScript
+  - Karma (Test Runner)
+  - Jasmine (Testing Framework)
+  - Karma Chrome Launcher
+  - Karma Coverage
+
+#### Dependencies:
+- **Core**:
+  - Angular Animations
+  - Angular CDK
+  - Angular Common
+  - Angular Compiler
+  - Angular Core
+  - Angular Forms
+  - Angular Material
+  - Angular Platform Browser
+  - Angular Platform Server
+  - Angular Router
+  - Angular SSR
+- **Third-Party Libraries**:
+  - ApexCharts
+  - Bootstrap
+  - Express
+  - jQuery
+  - ng-apexcharts
+  - RxJS
+  - Zone.js
+
+---
+
+## User Interface/ User Experience
+
+Admin:
+- ![Welcome Page](Images/Application UI/Admin/welcomepage.png)\
+- ![LogIn Page](Images/Application UI/Admin/login page.png)
+- ![Admin Dashboard](Images/Application UI/Admin/Admin Dashboard.png)
+
+Manager:
+- ![Manager - I](Images/Application UI/Manager/1 Mnagaer.png)
+- ![Manager - II](Images/Application UI/Manager/2 manager.png)
+- ![Manager - III](Images/Application UI/Manager/3 manager.png)
+- ![Manager - IV](Images/Application UI/Manager/4 manager.png)
+
+Employee:
+- ![Employee - I](Images/Application UI/employee/Screenshot from 2024-05-24 13-08-59.png)e
+- ![Employee - II](Images/Application UI/employee/Screenshot from 2024-05-24 13-08-3.png)
+- ![Employee - III](Images/Application UI/employee/Screenshot from 2024-05-24 13-08-49.png)
+
+
 
 ### Created by:
 - MT2023153 - Arjun Gangani [Arjun.Gangani@iiitb.ac.in](mailto:Arjun.Gangani@iiitb.ac.in)
