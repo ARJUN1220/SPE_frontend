@@ -16,7 +16,7 @@
    - [Building the Application](#building-the-application)
    - [Running Tests](#running-tests)
    - [Tool Stack](#tool-stack)
-5. [User Interface/ User Experience](#user-interface/-user-experience)
+5. [Application UI](#application-ui)
 
 ---
 
@@ -110,11 +110,6 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
 - Docker: Containerization for application management
 - Ansible: Automation for configuration and deployment
 - ELK Stack: Log management and analysis
-
----
-
-### [Application User Interface](Images/Application%20UI)
-
 
 ---
 
@@ -215,24 +210,24 @@ This will execute the unit tests and generate a report.
 
 ---
 
-## User Interface/ User Experience
+## Application UI
 
-Admin:
-- ![Welcome Page](Images/Application UI/Admin/welcomepage.png)\
-- ![LogIn Page](Images/Application UI/Admin/login page.png)
-- ![Admin Dashboard](Images/Application UI/Admin/Admin Dashboard.png)
-
-Manager:
-- ![Manager - I](Images/Application UI/Manager/1 Mnagaer.png)
-- ![Manager - II](Images/Application UI/Manager/2 manager.png)
-- ![Manager - III](Images/Application UI/Manager/3 manager.png)
-- ![Manager - IV](Images/Application UI/Manager/4 manager.png)
-
-Employee:
-- ![Employee - I](Images/Application UI/employee/Screenshot from 2024-05-24 13-08-59.png)e
-- ![Employee - II](Images/Application UI/employee/Screenshot from 2024-05-24 13-08-3.png)
-- ![Employee - III](Images/Application UI/employee/Screenshot from 2024-05-24 13-08-49.png)
-
+### Admin:
+#### ![Welcome Page](Images/Application%20UI/Admin/welcomepage.png)
+#### ![LogIn Page](Images/Application%20UI/Admin/login%20page.png)
+#### ![Admin Dashboard](Images/Application%20UI/Admin/Admin%20dashboard.png)
+----
+### Manager:
+#### ![Manager - I](Images/Application%20UI/Manager/1%20Mnagaer.png)
+#### ![Manager - II](Images/Application%20UI/Manager/2%20manager.png)
+#### ![Manager - III](Images/Application%20UI/Manager/3%20manager.png)
+#### ![Manager - IV](Images/Application%20UI/Manager/4%20manager.png)
+----
+### Employee:
+#### ![Employee - I](Images/Application%20UI/employee/Screenshot%20from%202024-05-24%2013-08-59.png)
+#### ![Employee - II](Images/Application%20UI/employee/Screenshot%20from%202024-05-24%2013-09-03.png)
+#### ![Employee - III](Images/Application%20UI/employee/Screenshot%20from%202024-05-24%2013-09-49.png)
+---
 
 
 ### Created by:
