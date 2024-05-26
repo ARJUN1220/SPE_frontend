@@ -70,7 +70,7 @@ services:
     image: docker.elastic.co/logstash/logstash:7.15.0
     container_name: logstash
     volumes:
-      - /home/aj/SPE_major_project/JAIRU-Frontend/logstash-pipeline:/usr/share/logstash/pipeline
+      - /home/aj/SPE_major_project/workwise-Frontend/logstash-pipeline:/usr/share/logstash/pipeline
     ports:
       - 5000:5000
     depends_on:
